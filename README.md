@@ -15,7 +15,7 @@ Argument (Default Value) - Description
 - filter_exp (ip) - The packet-filter expression
 - tree_file (default.tree) - The decision tree file
 - ip<1-8> () - The comma-separated IP-address (in CIDR notation) list
-- port<1-8> () - The comma-separated port (range (lower:upper>)) list
+- port<1-8> () - The comma-separated port (range (lower:upper)) list
 - ip_history_length (1) - The IP-history length
 - port_history_length (1) - The source/destination port history length
 - pair_history_length (1) - The socket-pair history length
