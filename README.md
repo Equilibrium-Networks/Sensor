@@ -7,7 +7,7 @@ $ gcc `pcap-config --libs` -pthread sensor.c node.c tree.c treeFunctions.c table
 
 To run:
 
-$ sensor [--<argument1> <value1> [--<argument2> <value2> ...]]
+$ sensor [--argument1 value1 [--argument2 value2 ...]]
 
 Argument (Default Value) - Description
 --------------------------------------
