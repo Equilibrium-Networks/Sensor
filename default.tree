@@ -1,0 +1,19 @@
+Tree a
+<a>{isInIPList1}(b)(c)
+<b>{isInIPList2}(d)(e)
+<c>{isInPortList1}(f)(g)
+<d>{isInIPList3}(h)(i)
+<e>{isInPortList2}(j)(k)
+<f>{isAttached}[0][1]
+<g>{isAttached}[2][3]
+<h>{isFrequentIP}(l)(m)
+<i>{isInPortList3}(n)(o)
+<j>{isAttached}[4][5]
+<k>{isAttached}[6][7]
+<l>{isOccasionalIP}(p)(q)
+<m>{isAttached}[8][9]
+<n>{isAttached}[10][11]
+<o>{isAttached}[12][13]
+<p>{isAttached}[14][15]
+<q>{isAttached}[16][17]
+End
