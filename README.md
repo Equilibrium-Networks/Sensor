@@ -3,7 +3,7 @@ Sensor - A libpcap-based sensor/reducer
 
 To compile:
 
-$ gcc \`pcap-config --libs\` -pthread sensor.c node.c tree.c treeFunctions.c tables.c -o sensor
+$ gcc $(pcap-config --libs) -pthread sensor.c node.c tree.c treeFunctions.c tables.c -o sensor
 
 To run:
 
