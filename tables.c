@@ -33,8 +33,6 @@ unsigned int frequent_sp = 1;
 unsigned int occasional_sp = 1;
 unsigned int frequent_dp = 1;
 unsigned int occasional_dp = 1;
-unsigned int frequent_pair = 1;
-unsigned int occasional_pair = 1;
 
 unsigned int len_sp;
 unsigned int len_dp;
