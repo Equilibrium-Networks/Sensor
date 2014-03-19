@@ -19,7 +19,7 @@ Argument (Default Value) - Description
 - ip_history_length (1) - The IP-history length
 - port_history_length (1) - The source/destination port history length
 - pair_history_length (1) - The socket-pair history length
-- src_ip_occasional_threshold (1) - The occasinoal source-IP threshold (inclusive)
+- src_ip_occasional_threshold (1) - The occasional source-IP threshold (inclusive)
 - src_ip_frequent_threshold (1) - The frequent source-IP threshold (inclusive)
 - dst_ip_occasional_threshold (1) - The occasional destination-IP threshold (inclusive)
 - dst_ip_frequent_threshold (1) - The frequent destination-IP threshold (inclusive)
@@ -28,7 +28,8 @@ Argument (Default Value) - Description
 - dp_frequent_threshold (1) - The occasional destination-port threshold (inclusive)
 - dp_occasional_threshold (1) - The frequent destination-port threshold (inclusive)
 
-Available decision tree questions:
+Decision Tree Questions
+-----------------------
 - isTCP
 - isUDP
 - isICMP
@@ -43,3 +44,25 @@ Available decision tree questions:
 - isOccasionalPort (affected by port_history_length and *p_occasional_threshold)
 - isFrequentPort (affected by port_history_length and *p_frequent_threshold)
 - isAttached (affected by pair_history_length)
+
+Decision Tree Syntax
+--------------------
+Tree treename
+ONE OR MORE
+OF <nodename>{question}(nodename_false)(nodename_true)
+OR <nodename>{question}(nodename_false)[integer_true]
+OR <nodename>{question}[integer_false](nodename_true)
+OR <nodename>{question}[integer_false][integer_true]
+End
+
+Note:  Names must have fewer than 256 characters.
+
+Example:
+
+Tree Example
+<root>{isTCP}(nonTCP)[0]
+<nonTCP>{isUDP}(nonTCPUDP)[1]
+<nonTCPUDP>{isICMP}[3][2]
+End
+
+This tree decides whether each captured packet is TCP (0), UDP (1), ICMP (2), or other (3).
