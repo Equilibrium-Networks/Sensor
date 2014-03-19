@@ -49,20 +49,20 @@ Decision Tree Syntax
 --------------------
 <pre>Tree treename
 ONE OR MORE
-OF \<nodename\>{question}(nodename_false)(nodename_true)
-OR \<nodename\>{question}(nodename_false)[integer_true]
-OR \<nodename\>{question}[integer_false](nodename_true)
-OR \<nodename\>{question}[integer_false][integer_true]
+OF &lt;nodename&gt;{question}(nodename_false)(nodename_true)
+OR &lt;nodename&gt;{question}(nodename_false)[integer_true]
+OR &lt;nodename&gt;{question}[integer_false](nodename_true)
+OR &lt;nodename&gt;{question}[integer_false][integer_true]
 End</pre>
 
 Note:  Names must have fewer than 256 characters.
 
 Example:
 
-Tree Example
-<root>{isTCP}(nonTCP)[0]
-<nonTCP>{isUDP}(nonTCPUDP)[1]
-<nonTCPUDP>{isICMP}[3][2]
-End
+<pre>Tree Example
+&lt;root&gt;{isTCP}(nonTCP)[0]
+&lt;nonTCP&gt;{isUDP}(nonTCPUDP)[1]
+&lt;nonTCPUDP&gt;{isICMP}[3][2]
+End</pre>
 
 This tree decides whether each captured packet is TCP (0), UDP (1), ICMP (2), or other (3).
