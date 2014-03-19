@@ -49,9 +49,9 @@ Decision Tree Syntax
 --------------------
 Tree treename
 ONE OR MORE
-OF <nodename>{question}(nodename_false)(nodename_true)
-OR <nodename>{question}(nodename_false)[integer_true]
-OR <nodename>{question}[integer_false](nodename_true)
+OF <nodename>{question}(nodename_false)(nodename_true)<br>
+OR <nodename>{question}(nodename_false)[integer_true]<br>
+OR <nodename>{question}[integer_false](nodename_true)<br>
 OR <nodename>{question}[integer_false][integer_true]
 End
 
