@@ -49,10 +49,10 @@ Decision Tree Syntax
 --------------------
 <pre>Tree treename
 ONE OR MORE
-OF <nodename>{question}(nodename_false)(nodename_true)
-OR <nodename>{question}(nodename_false)[integer_true]
-OR <nodename>{question}[integer_false](nodename_true)
-OR <nodename>{question}[integer_false][integer_true]
+OF \<nodename\>{question}(nodename_false)(nodename_true)
+OR \<nodename\>{question}(nodename_false)[integer_true]
+OR \<nodename\>{question}[integer_false](nodename_true)
+OR \<nodename\>{question}[integer_false][integer_true]
 End</pre>
 
 Note:  Names must have fewer than 256 characters.
