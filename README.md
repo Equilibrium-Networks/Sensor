@@ -37,8 +37,8 @@ Decision Tree Questions
 - isICMPReply
 - isICMPError
 - isICMPOther
-- isInIPList<1-8> (associated with ip<1-8>)
-- isInPortList<1-8> (associated with port<1-8>)
+- isInIPList&lt;1-8&gt; (associated with ip&lt;1-8&gt;)
+- isInPortList&lt;1-8&gt; (associated with port&lt;1-8&gt;)
 - isOccasionalIP (affected by ip_history_length and *_ip_occasional_threshold)
 - isFrequentIP (affected by ip_history_length and *_ip_frequent_threshold)
 - isOccasionalPort (affected by port_history_length and *p_occasional_threshold)
